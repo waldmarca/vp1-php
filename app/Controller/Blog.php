@@ -57,6 +57,11 @@ class Blog extends AbstractController
 
     }
 
+    public function twig()
+    {
+        return $this->view->renderTwig('test.twig', ['var' => 'dummydata']);
+    }
+
     private function error()
     {
 
